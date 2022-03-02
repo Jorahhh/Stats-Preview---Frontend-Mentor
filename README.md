@@ -1,13 +1,4 @@
 
-
-### Screenshot
-
-![](./screenshot.jpg)
-
-![](../../../../../../Pictures/Photos Library.photoslibrary/originals/B/BA102E7F-45BB-4504-A514-1EDEA1BF9F33.jpeg)
-![](../../../../../../Pictures/Photos Library.photoslibrary/originals/2/283C48AB-FE9C-49D1-B46E-B49FD6835B9E.jpeg)
-
-
 ### Links
 
 - Solution URL: (https://github.com/Jorahhh/Stats-Preview---Frontend-Mentor)
