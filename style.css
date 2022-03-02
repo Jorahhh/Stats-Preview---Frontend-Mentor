@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 15px;
+}
+
+body{
+    height: 100vh;
+    background: hsl(233, 47%, 7%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card{
+    width: 350px;
+    height: 90%;
+    margin: 0 auto;
+    background: hsl(244, 38%, 16%);
+    border-radius: 5px;
+    text-align: center;
+    font-family:'Inter', sans-serif;
+    font-weight: 700;
+}
+/*--------------IMAGE DESK----------*/
+.image-desktop img{
+    display: none;
+}
+
+.image-desktop img {
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.image-desktop{
+    position: relative;
+}
+
+.image-desktop::after{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content:'';
+    left: 0;
+    top: 0;
+    background-color: hsla(277, 65%, 25%, .6);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/*-------IMAGE MOBILE-----------*/
+
+.image-mobile img {
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.image-mobile{
+    position: relative;
+}
+
+.image-mobile::after{
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    content:'';
+    left: 0;
+    top: 0;
+    background-color: hsla(277, 65%, 25%, .6);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+
+span{
+    color:  hsl(277, 64%, 62%);
+}
+/*------INFO----------*/
+.primary-info{
+    color: hsl(0, 0%, 100%);
+}
+
+.primary-info h1{
+    padding-top: 18px;
+    padding-bottom: 15px;
+    cursor: text;
+}
+
+.primary-info p{
+    font-weight: 400;
+    line-height: 1.6em;
+    color:  hsla(0, 0%, 100%, 0.75);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 12px;
+}
+
+.stat span{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    /*padding-bottom: 5px;*/
+    font-size: 25px;
+}
+
+.stat p{
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: lighter;
+    letter-spacing: 0.2em;
+    color: hsla(0, 0%, 100%, 0.6);
+    /*padding-bottom: 15px;*/
+    font-size: 12px;
+
+}
+
+
+@media (max-width: 1600px) and (min-width: 800px)  {
+
+    .card {
+        height: 25rem;
+        width: 60rem;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .image-mobile {
+        display: none;
+    }
+
+    .image-desktop img {
+        display: block;
+    }
+
+    .image-desktop{
+        width:70%;
+        height: 100%;
+    }
+
+
+
+    h1{
+        text-align: left;
+        padding: 50px 0 10px 35px;
+        margin-top: 30px;
+    }
+
+    .primary-info p {
+        text-align: left;
+        padding: 0 0 5px 35px;
+    }
+
+
+    .stat{
+        display: inline-block;
+    }
+
+    .stats{
+        padding: 0 90px 0 0;
+        margin-top: 40px;
+    }
+
+    .stat span{
+        padding-left: 30px;
+    }
+
+}
